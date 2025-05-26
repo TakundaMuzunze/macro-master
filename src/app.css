@@ -1,2 +1,50 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter-VariableFont_opsz,wght.ttf');
+}
+
+@theme {
+	/*COLOURS*/
+	--color-primary-text: #101411;
+	--color-accent: #6ad28b;
+
+	/*BUTTONS*/
+	--color-primary-btn: #5cad77;
+	--color-secondary-btn: #99d6ad;
+
+	/*BACKGROUND*/
+	--color-background-default: #fcfdfd;
+}
+
+@layer base {
+	[data-theme='dark'] {
+		/*COLOURS*/
+		--color-primary-text: #ebefec;
+		--color-accent: #2d954e;
+
+		/*BUTTONS*/
+		--color-primary-btn: #52a36d;
+		--color-secondary-btn: #29663d;
+
+		/*BACKGROUND*/
+		--color-background-default: #020303;
+	}
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	background-color: var(--color-background-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Inter';
+	font-weight: 700;
+}
