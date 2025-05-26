@@ -5,6 +5,8 @@
 	const { Story } = defineMeta({
 		component: Button,
 		tags: ['autodocs'],
+		title: 'Buttons/Base Button',
+
 		argTypes: {
 			variant: {
 				control: { type: 'select' },
