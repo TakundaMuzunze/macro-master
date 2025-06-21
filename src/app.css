@@ -17,6 +17,9 @@
 
 	/*BACKGROUND*/
 	--color-background-default: #fcfdfd;
+
+	/*SURFACE*/
+	--color-surface: #e9f6ee;
 }
 
 @layer base {
@@ -31,6 +34,9 @@
 
 		/*BACKGROUND*/
 		--color-background-default: #020303;
+
+		/*SURFACE*/
+		--color-surface: #08190f;
 	}
 }
 
