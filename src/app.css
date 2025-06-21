@@ -8,7 +8,7 @@
 
 @theme {
 	/*COLOURS*/
-	--color-primary-text: #101411;
+	--color-primary: #101411;
 	--color-accent: #6ad28b;
 
 	/*BUTTONS*/
@@ -22,7 +22,7 @@
 @layer base {
 	[data-theme='dark'] {
 		/*COLOURS*/
-		--color-primary-text: #ebefec;
+		--color-primary: #ebefec;
 		--color-accent: #2d954e;
 
 		/*BUTTONS*/
