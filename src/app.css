@@ -8,7 +8,7 @@
 
 @theme {
 	/*COLOURS*/
-	--color-primary-text: #101411;
+	--color-primary: #101411;
 	--color-accent: #6ad28b;
 
 	/*BUTTONS*/
@@ -17,12 +17,15 @@
 
 	/*BACKGROUND*/
 	--color-background-default: #fcfdfd;
+
+	/*SURFACE*/
+	--color-surface: #e9f6ee;
 }
 
 @layer base {
 	[data-theme='dark'] {
 		/*COLOURS*/
-		--color-primary-text: #ebefec;
+		--color-primary: #ebefec;
 		--color-accent: #2d954e;
 
 		/*BUTTONS*/
@@ -31,6 +34,9 @@
 
 		/*BACKGROUND*/
 		--color-background-default: #020303;
+
+		/*SURFACE*/
+		--color-surface: #08190f;
 	}
 }
 
