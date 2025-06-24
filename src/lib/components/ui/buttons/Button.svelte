@@ -10,13 +10,13 @@
 	const buttonSizes: Record<typeof size, string> = {
 		sm: 'px-4 py-2',
 		md: 'px-6 py-3',
-		lg: 'px-8 py-4'
+		lg: 'px-8 py-4 text-xl'
 	};
 </script>
 
 <button
 	onclick={event}
 	aria-label={text}
-	class={` shadow-accent/80 inline-flex cursor-pointer items-center gap-2 rounded-2xl font-medium transition-all ease-in-out hover:-translate-y-1 hover:shadow-md
+	class={` shadow-accent/80 inline-flex w-fit cursor-pointer items-center gap-2 rounded-2xl font-medium transition-all ease-in-out hover:-translate-y-1 hover:shadow-md
     ${variants[variant]} ${buttonSizes[size]}`}>{text}</button
 >

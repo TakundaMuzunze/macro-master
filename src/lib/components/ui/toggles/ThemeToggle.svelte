@@ -9,6 +9,13 @@
 		localStorage.setItem('theme', theme);
 	}
 
+	function handleKeydown(event: KeyboardEvent) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			toggleTheme();
+		}
+	}
+
 	onMount(() => {
 		const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
 		if (savedTheme) {
@@ -19,9 +26,11 @@
 </script>
 
 <button
-	onclick={toggleTheme}
-	aria-label="Theme toggle switch"
-	class="relative flex h-10 w-20 items-center rounded-full bg-gray-200 px-2 transition-colors duration-300 dark:bg-gray-700"
+	on:click={toggleTheme}
+	on:keydown={handleKeydown}
+	aria-label="Toggle between light and dark theme. Currently {theme === 'light' ? 'light' : 'dark'} mode"
+	aria-pressed={theme === 'dark'}
+	class="relative flex h-10 w-20 items-center rounded-full bg-gray-200 px-2 transition-colors duration-300 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +39,7 @@
 		stroke-width="1.5"
 		stroke="currentColor"
 		class="absolute left-2 h-5 w-5 text-yellow-500"
+		aria-hidden="true"
 	>
 		<path
 			stroke-linecap="round"
@@ -45,6 +55,7 @@
 		stroke-width="1.5"
 		stroke="currentColor"
 		class="absolute right-2 h-5 w-5 text-white"
+		aria-hidden="true"
 	>
 		<path
 			stroke-linecap="round"
@@ -57,5 +68,6 @@
 	<span
 		class="absolute z-10 h-6 w-6 rounded-full bg-white shadow-md transition-transform duration-350 dark:bg-gray-800"
 		style="transform: translateX({theme === 'dark' ? '2.5rem' : '0rem'})"
+		aria-hidden="true"
 	/>
 </button>
