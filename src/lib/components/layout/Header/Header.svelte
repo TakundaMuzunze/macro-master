@@ -19,7 +19,7 @@
 
 <header
 	aria-label="Main navigation"
-	class="bg-background-default fixed top-0 z-2 flex w-full flex-row items-center justify-between px-4 pt-5 xl:px-10"
+	class=" fixed top-0 z-2 flex w-full flex-row items-center justify-between px-4 py-4 pt-5 backdrop-blur-xl xl:px-10"
 >
 	<div class="flex items-start justify-start">
 		<h1 class="text-primary text-2xl">
