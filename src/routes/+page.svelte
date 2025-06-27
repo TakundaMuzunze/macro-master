@@ -1,6 +1,7 @@
 <script>
 	import Header from '$lib/components/layout/Header/Header.svelte';
 	import Hero from '$lib/components/sections/Hero/Hero.svelte';
+	import HowItWorks from '$lib/components/sections/HowItWorks/HowItWorks.svelte';
 </script>
 
 <a
@@ -16,4 +17,6 @@
 	<main id="main-content" class="flex h-full flex-col pt-[5rem]">
 		<Hero />
 	</main>
+
+	<HowItWorks />
 </div>
