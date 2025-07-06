@@ -65,7 +65,7 @@
 	<p class="text-primary text-lg font-light">Learn how this app works</p>
 
 	<div
-		class="flex w-full gap-4 overflow-x-auto scroll-smooth px-4 py-4 md:py-8 lg:grid lg:grid-cols-3 lg:gap-6 lg:py-10"
+		class="flex w-full max-w-5xl gap-4 overflow-x-auto scroll-smooth px-4 py-4 md:py-8 lg:grid lg:grid-cols-3 lg:gap-6 lg:py-10"
 		role="list"
 		aria-label="Step-by-step process for using MacroMaster"
 	>
