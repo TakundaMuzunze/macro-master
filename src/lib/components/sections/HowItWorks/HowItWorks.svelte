@@ -53,13 +53,16 @@
 </script>
 
 <section
-	class="relative flex w-full flex-col items-center justify-center gap-6 p-5"
+	class="lG:p-10 relative flex w-full flex-col items-center justify-center gap-6 p-5"
 	aria-labelledby="how-it-works-title"
 >
-	<h2 id="how-it-works-title" class="text-primary text-center text-4xl font-normal text-balance">
+	<h2
+		id="how-it-works-title"
+		class="text-primary px-5 text-center text-2xl font-normal text-balance md:text-3xl xl:text-4xl"
+	>
 		How does MacroMaster work?
 	</h2>
-	<p class="text-primary text-lg font-light italic">Learn how this app works</p>
+	<p class="text-primary text-lg font-light">Learn how this app works</p>
 
 	<div
 		class="flex w-full gap-4 overflow-x-auto scroll-smooth px-4 py-4 md:py-8 lg:grid lg:grid-cols-3 lg:gap-6 lg:py-10"

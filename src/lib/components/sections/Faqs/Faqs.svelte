@@ -9,8 +9,8 @@
 	}
 </script>
 
-<section class="flex w-full flex-col items-center justify-center gap-5 p-10 lg:gap-10">
-	<h2 class="text-primary text-center text-2xl text-balance lg:text-3xl">
+<section class="flex w-full flex-col items-center justify-center gap-5 p-5 lg:gap-10 lg:p-10">
+	<h2 class="text-primary px-5 text-center text-2xl text-balance md:text-3xl lg:text-4xl">
 		Frequently asked questions
 	</h2>
 	<div class="mx-auto flex w-full max-w-2xl flex-col gap-5 py-5 lg:py-10">

@@ -16,7 +16,7 @@
 <div class="relative min-h-screen">
 	<Header />
 
-	<main id="main-content" class="flex h-full flex-col pt-[5rem]">
+	<main id="main-content" class="flex h-full flex-col gap-4 pt-[5rem] lg:gap-8">
 		{@render children()}
 	</main>
 

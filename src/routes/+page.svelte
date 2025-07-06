@@ -8,8 +8,8 @@
 </script>
 
 <Hero />
-<HowItWorks />
-<ValueBanner />
 <FeaturesSection />
-<Faqs />
+<ValueBanner />
+<HowItWorks />
 <CtaBanner />
+<Faqs />
